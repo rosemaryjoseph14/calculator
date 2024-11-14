@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="mainbox">
+ <div class="bodybox">
+
+        <input type="text" class="texter" value="">
+
+ <div class="buttonbox">
+
+    <button class="button red" onclick="Acbox()">AC</button>
+    <button class="button red" onclick="mbox()">%</button>
+    <button class="button red"onclick="backbox()" >C</button>
+    <button class="button red"onclick="number('+')" >+</button>
+    <button class="button"onclick="number(7)">7</button>
+    <button class="button"onclick="number(8)">8</button>
+    <button class="button"onclick="number(9)">9</button>
+    <button class="button red"onclick="number('*')" >*</button>
+    <button class="button"onclick="number(4)">4</button>
+    <button class="button"onclick="number(5)">5</button>
+    <button class="button"onclick="number(6)">6</button>
+    <button class="button red" onclick="number('-')">-</button>
+    <button class="button" onclick="number(1)">1</button>
+    <button class="button" onclick="number(2)">2</button>
+    <button class="button" onclick="number(3)">3</button>
+    <button class="button red" onclick="number('/')">/</button>
+    <button class="button" onclick="number('00')">00</button>
+    <button class="button" onclick="number(0)">0</button>
+    <button class="button" onclick="number('.')">.</button>
+    <button class="button red" onclick="answer()">=</button>
+
+</div>
+</div>
+</div>
+
+<script>
+
+
+function number(a){
+ document.querySelector(".texter").value+=a;
+}
+
+function answer(){
+ document.querySelector(".texter").value=eval(document.querySelector(".texter").value)       
+      }
+function Acbox(){
+    document.querySelector(".texter").value=""
+}
+function backbox(){
+    document.querySelector(".texter").value=document.querySelector(".texter").value.slice(0,-1)
+}    
+function mbox(){
+    document.querySelector(".texter").value=eval(document.querySelector(".texter").value)*100;
+}
+
+</script>
+
+</body>
+</html>

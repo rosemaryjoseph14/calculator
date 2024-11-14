@@ -1,0 +1,39 @@
+.mainbox{width:100%;
+    height:720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#f2f4fa;}
+
+.bodybox{width:50%;
+    padding-left: 4px;
+    padding-right:4px;
+     height:600px;
+     background-color:  #b6cdf9;}
+
+.texter{
+    margin-top: 5px;
+    width: 99%;
+    font-size:30px;
+    border: none;
+    height: 80px;}
+
+.button{
+    width:24%;
+    margin-top:5px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #8b0828;
+    background-color: #f2f2f2;
+    height: 70px;
+    }
+
+.buttonbox{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:10%;
+}
+
+.red{background-color:#a5042d;
+    border: 1px solid #ffffff;
+    color: #ffffff;}
